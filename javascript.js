@@ -73,7 +73,7 @@ function getChannelInfo() {
 window.addEventListener("load", function() {
     getChannelInfo();
 
-//Segunda parte: define el comportamiento del menu supperior y los canales que ee muestran
+//Segunda parte: define el comportamiento del menu supperior y los canales que se muestran
 
 var selector = document.querySelectorAll('.selector'); //Devuelve una nodeList
 
