@@ -36,11 +36,14 @@ function getChannelInfo() {
                             if (xhr.status === 200) {
                                 var data = JSON.parse(this.response);
                                 var logo = data.logo != null ? data.logo : "https://dummyimage.com/50x50/ecf0e7/5c5457.jpg&text=0x3F",
+                                    
                                     name = data.display_name != null ? data.display_name : channel,
-                                    description = status === "online" ? ': ' + data.status : "";
-
-                                var html = document.createElement("div");
-                                html.innerHTML = '<div class="row ' + status + '" id="canal"><div class="col-xs-2 col-md-2" id="icon"><img src="' +
+                                    
+                                    description = status === "online" ? ': ' + data.status : "",
+                                    
+                                    html = document.createElement("div");
+                                
+                                    html.innerHTML = '<div class="row ' + status + '" id="canal"><div class="col-xs-2 col-md-2" id="icon"><img src="' +
                                     logo + '" class="logo"></div><div class="col-xs-5 col-md-3" id="name"><a href="' +
                                     data.url + '" target="_blank">' + name + '</a></div><div class="col-xs-5 col-md-7" id="streaming">' +
                                     game + '<span class="hidden-xs">' + description + '</span></div></div>';
