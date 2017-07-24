@@ -114,8 +114,6 @@ var selector = document.querySelectorAll('.selector'); //Devuelve una nodeList
 });
 
 
-  });
 
-  });
 
   
