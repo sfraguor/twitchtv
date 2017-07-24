@@ -82,7 +82,7 @@ var selector = document.querySelectorAll('.selector'); //Devuelve una nodeList
         element.addEventListener('click', function() { //cuando hago click en alguna de las pestañas
             //selector.forEach( function (element) {
             //   element.classList.remove('active');
-            //})
+            //});
             //this.classList.add('active'); //clase active por ahora parece que no tiene utilidad `por eso la eliminamos, y el código sigue funcionando correctamente
 
               var status = this.getAttribute('id');
