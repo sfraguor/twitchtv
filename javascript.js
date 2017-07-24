@@ -9,7 +9,7 @@ function getChannelInfo() {
 
         
 
-        const xhr = new XMLHttpRequest();
+        var xhr = new XMLHttpRequest();
         xhr.open('GET', makeURL("streams", channel));
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4) {
@@ -29,7 +29,7 @@ function getChannelInfo() {
                         status = "online";
                     };
 
-                    const xhr = new XMLHttpRequest();
+                    xhr = new XMLHttpRequest();
                     xhr.open('GET', makeURL("channels", channel));
                     xhr.onreadystatechange = function() {
                         if (xhr.readyState === 4) {
