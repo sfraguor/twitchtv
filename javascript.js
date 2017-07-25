@@ -87,7 +87,7 @@ var selector = document.querySelectorAll('.selector'); //Devuelve una nodeList
 
               var status = this.getAttribute('id');
               var allChannels = document.querySelectorAll('#canal'); //Seleciono todos los canales
-              var onCnannel = document.querySelectorAll('.online');
+              var onChannel = document.querySelectorAll('.online');
               var offChannel = document.querySelectorAll('.offline');
 
               if (status === "all") { //cuando hago click en la pestala ALL, aparecen todos los canales
@@ -95,14 +95,14 @@ var selector = document.querySelectorAll('.selector'); //Devuelve una nodeList
                   element.classList.remove("hidden");
                 })
               } else if (status === 'online') { //cuando hago click en la pestala ONLINE, aparecen sólo los canales online
-                onCnannel.forEach( function (element) {
+                onChannel.forEach( function (element) {
                   element.classList.remove("hidden");
                 })
                 offChannel.forEach( function (element) {
                   element.classList.add("hidden");
                 })
               } else if (status === 'offline') { //cuando hago click en la pestala OFFLINE, aparecen sólo los canales offline
-                onCnannel.forEach( function (element) {
+                onChannel.forEach( function (element) {
                     element.classList.add("hidden");
                 })
                 offChannel.forEach( function (element) {
