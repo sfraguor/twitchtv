@@ -1,6 +1,6 @@
 
 
-var channels = ["freecodecamp", "ESL_SC2", "OgamingSC2", "cretetion", "llilka", "habathcx", "amouranth", "noobs2ninjas", "lizbethbobomb", "bifuteki"];
+var channels = ["freecodecamp", "ESL_SC2", "OgamingSC2", "cretetion", "llilka", "habathcx", "noobs2ninjas", "lizbethbobomb", "bifuteki"];
 
 function getChannelInfo() {
   //Las urls
@@ -55,9 +55,9 @@ function getChannelInfo() {
         status === "online" ? filter.prepend(elChild) : filter.append(elChild);
       }
       //insertBefore(html)
-      xhr.send(JSON.stringify());
+      xhr.send(JSON.stringify(channel));
    }
-    xhr2.send(JSON.stringify());
+    xhr2.send(JSON.stringify(channel));
 });
 };
 
