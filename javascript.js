@@ -55,9 +55,9 @@ function getChannelInfo() {
         status === "online" ? filter.prepend(elChild) : filter.append(elChild);
       }
       //insertBefore(html)
-      xhr.send(JSON.stringify(channel));
+      xhr.send();
    }
-    xhr2.send(JSON.stringify(channel));
+    xhr2.send();
 });
 };
 
